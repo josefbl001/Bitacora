@@ -48,14 +48,14 @@ incluir imagenes, notas, listas, tablas y etiquetas de manera sencilla en texto
 plano.
 
 Otro servicio que uso al programar es [Git](https://git-scm.com/), este permite
-llevar un control de las versiones[^1] de mis archivos y al usarse en conjunto
+llevar un control de las versiones<sup>[1](#myfootnote1)</sup> de mis archivos y al usarse en conjunto
 con un servicio como github, bitbucket o un servidor propio. Es una alternativa
 interesante al respaldo las notas.
 
 En un intento por agregar visualización  e indices a este flujo de trabajo, el
 script  **Bitácora** hace uso del programa
 [GRIP](https://github.com/joeyespo/grip), que permite visualizar archivos
-markdown[^2] . Ademas crea la pagina **index.md**, así como **notas.md**, que
+markdown<sup>[2](#myfootnote1)</sup> . Ademas crea la pagina **index.md**, así como **notas.md**, que
 agrupa el número de línea y la primera línea que sigue al tag ``Nota:`` dentro
 de cada archivo. Además crea un archivo que enlista los archivos por mes. El
 archivo **index.md**, contiene los primeros 5 archivos que se modificarón
@@ -78,5 +78,5 @@ en un path de execución del sistema o agregarse el path de este script al path
 de ejecución.
 
 
-[^1]: Este permite tanto un control de cambios como un sistema de respaldos.
-[^2]: La versión markdown de [github](https://help.github.com/articles/github-flavored-markdown/)
+<a name="myfootnote1">1</a>: Este permite tanto un control de cambios como un sistema de respaldos.
+<a name="myfootnote1">2</a>: La versión markdown de [github](https://help.github.com/articles/github-flavored-markdown/)
