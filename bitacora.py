@@ -30,8 +30,9 @@ def byNote(nFile):
 
 
 def mdLink(name, link=None):
+    nname = name.split("/")[-1][:-3]
     if link is None:
-        x = "[" + name + "]" + "(" + name + ")"
+        x = "[" + nname + "]" + "(" + name + ")"
     else:
         link = "." + link + ".md"
         x = "[" + name + "]" + "(" + link + ")"
@@ -39,8 +40,16 @@ def mdLink(name, link=None):
 
 
 def manageFile():
-    x = next(os.walk("."))[2]
-    x = [f for f in x if not f.startswith('.')]
+    # No recursivo
+    # x = next(os.walk("."))[1:]
+    # x = [f for f in x if not f.startswith('.')]
+    # Recursivo
+    x = []
+    for root, dirs, files in os.walk("."):
+        for f in files:
+            if not f.startswith('.') and not f.startswith('notas.'):
+                x.append(os.path.join(root, f))
+
     y = []
     for val in x:
         y.append(os.path.getmtime(val))
