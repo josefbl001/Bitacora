@@ -1,5 +1,5 @@
 # Bitácora
-##Bitácora de Trabajo basada en markdown.
+## Bitácora de Trabajo basada en markdown.
 
 Este script en pyhton permite visualizar un conjunto de archivos
 creados en markdown, con el fin navegar notas, comentarios o anotaciones. 
